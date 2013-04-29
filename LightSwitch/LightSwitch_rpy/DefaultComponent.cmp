@@ -1,0 +1,136 @@
+I-Logix-RPY-Archive version 8.7.1 C++ 5066837
+{ IComponent 
+	- _id = GUID cb837cf4-3084-406e-b55f-52422035c34d;
+	- _myState = 139264;
+	- _name = "DefaultComponent";
+	- m_buildType = Executable;
+	- m_libraries = "";
+	- m_additionalSources = "";
+	- m_standardHeaders = "";
+	- m_includePath = "";
+	- m_initializationCode = "";
+	- m_folder = { IFolder 
+		- _id = GUID 54b77d0f-28dd-456a-a685-34c5dd9a7428;
+		- _myState = 73728;
+		- _name = "Files";
+		- m_path = "";
+		- Elements = { IRPYRawContainer 
+			- size = 0;
+		}
+		- Files = { IRPYRawContainer 
+			- size = 0;
+		}
+	}
+	- m_configActive = { ICodeGenConfigInfoHandle 
+		- _m2Class = "ICodeGenConfigInfo";
+		- _id = GUID 1dcf6e9a-b408-48a5-9ed8-6ef3784ce59b;
+	}
+	- Configs = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ ICodeGenConfigInfo 
+			- _id = GUID 1dcf6e9a-b408-48a5-9ed8-6ef3784ce59b;
+			- _myState = 8192;
+			- _name = "DefaultConfig";
+			- HyperLinks = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IMHyperLink 
+					- _id = GUID 72032e1b-268d-46ef-9ac1-ef3be683d7da;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Makefile";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\rhapsody\\LightSwitch\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
+					- isConfigurationFileHyperLink = 1;
+				}
+				{ IMHyperLink 
+					- _id = GUID 798cd61f-c1a4-4709-94c0-51c720d6d77a;
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "";
+					}
+					- _linkDispName = "Edit Main File";
+					- _linkType = "FREE";
+					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\rhapsody\\LightSwitch\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
+					- isConfigurationFileHyperLink = 1;
+				}
+			}
+			- _scopeType = Explicit;
+			- _libraries = "";
+			- _additionalSources = "";
+			- _standardHeaders = "";
+			- _includePath = "";
+			- _targetMain = "";
+			- _instrumentation = Animation;
+			- _timeModel = RealTime;
+			- m_generateActors = 1;
+			- _statechartImplementation = Flat;
+			- _initializationCode = "";
+			- _checksList = 0 ;
+			- ScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- InitialInstances = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "TopLevel";
+					- _name = "Light";
+					- _id = GUID a0496e20-bca4-4184-8731-53e838bea0d5;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "TopLevel";
+					- _name = "Switch";
+					- _id = GUID 4aee6b56-3ec1-447f-8430-a8db994b327c;
+				}
+			}
+			- _root = { IFolder 
+				- _id = GUID 48393a3d-c67d-440b-a928-add8a9f2aeba;
+				- _myState = 8192;
+				- _name = "DefaultConfig";
+				- m_path = "";
+				- Elements = { IRPYRawContainer 
+					- size = 0;
+				}
+				- Files = { IRPYRawContainer 
+					- size = 0;
+				}
+			}
+			- weakCGTime = 4.22.2013::19:32:55;
+			- strongCGTime = 4.22.2013::19:32:55;
+			- AnimScopeElements = { IRPYRawContainer 
+				- size = 0;
+			}
+			- m_allInAnimScope = 1;
+			- m_generateUsecases = 0;
+		}
+	}
+	- HandlesInMe = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IHandle 
+			- _m2Class = "ISubsystem";
+			- _filename = "Default.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "Default";
+			- _id = GUID 0a9b06d1-4e0d-4b7a-8283-f258a8ebe4ab;
+		}
+	}
+	- VariationPoints = { IRPYRawContainer 
+		- size = 0;
+	}
+	- SelectedVariants = { IRPYRawContainer 
+		- size = 0;
+	}
+	- weakCGTime = 4.22.2013::19:32:55;
+	- strongCGTime = 12.31.1969::19:0:0;
+}
+

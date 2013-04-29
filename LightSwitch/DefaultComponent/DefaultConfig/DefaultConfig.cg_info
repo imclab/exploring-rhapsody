@@ -1,0 +1,54 @@
+I-Logix-RPY-Archive version 8.7.1 * 5066837
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 10;
+	- value = "DefaultComponent\\DefaultConfig\\Default.cpp" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\Default.h" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\Light.cpp" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\Light.h" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\Switch.cpp" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\Switch.h" 4.22.2013::19:32:58
+	"DefaultComponent\\DefaultConfig\\aLight.cpp" 4.22.2013::19:9:49
+	"DefaultComponent\\DefaultConfig\\aLight.h" 4.22.2013::19:9:48
+	"DefaultComponent\\DefaultConfig\\aSwitch.cpp" 4.22.2013::19:9:49
+	"DefaultComponent\\DefaultConfig\\aSwitch.h" 4.22.2013::19:9:48
+	
+}
+- size = 4;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 0a9b06d1-4e0d-4b7a-8283-f258a8ebe4ab;
+}
+- genTime = 4.24.2013::19:31:47;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "Switch";
+	- _id = GUID 4aee6b56-3ec1-447f-8430-a8db994b327c;
+}
+- genTime = 4.24.2013::19:31:47;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "Light";
+	- _id = GUID a0496e20-bca4-4184-8731-53e838bea0d5;
+}
+- genTime = 4.24.2013::19:31:47;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 1dcf6e9a-b408-48a5-9ed8-6ef3784ce59b;
+}
+- genTime = 4.24.2013::19:31:47;
+
