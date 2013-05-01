@@ -48,6 +48,12 @@ Create a new project by selecting the "New Project" option in the middle of the 
 
 ## 3. Defining Classes
 
+To create the classes for the LightSwitch tutorial, expand the "Packages" folder in the Entire Model View sidebar. Right-click on the "Packages" folder and click "Add New Package", and give the package a descriptive name. Since this is a simple project and it will consist of only one package, name the package "LightSwitch".
+
+Right click on your new package and click Add New > Diagrams > Class Diagram. Name the diagram something like "Lightswitch Class Diagram" and press enter to continue to a UML editor view. Under the "Diagram Tools" toolbox on the right side of the window, find the "Class" item and drag two copies of it over onto the diagram workspace. Name these classes "Bulb" and "Switch" respectively.
+
+You'll notice after you create "Bulb" and "Switch" that a "Classes" folder has appeared under the "LightSwitch" package. You can manipuate the classes in your diagram from this tree view the same way you can in the diagram view. To give the Bulb a property that indicates whether it is lit, double click on it in the diagram view and select the Attributes tab. Click the spot under the "Name" column where it says "<New>" and enter the name "illuminated", and then change the Type to "bool" and set its Initial Value to "FALSE".
+
 ## 4. Defining Properties and Operations
 
 ## 5. Defining the Statechart
