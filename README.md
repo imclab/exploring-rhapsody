@@ -18,9 +18,33 @@ you've defined. This will help you visualize your program's flow
 and help you catch potential design flaws and edge cases you might not
 have covered.
 
+This tutorial will walk you through the process of setting up IBM Rational Rhapsody for C++ 8.0 for the first time and creating a simple model of a lightswitch.
+
 ## 2. Getting Started
 
+Before you can get started using Rhapsody, you'll need to make certain that the lab computer you are using is configured properly. By default, the computers in the Software Engineering department labs do not have the path set for the Visual Studio 2010 tools which are required
+to build projects.
 
+### Fixing Configuration Problems
+
+In order to configure your account on the lab computer so that Rhapsody can find `nmake` and the other tools it needs, follow these steps:
+
+0. Close Rhapsody if it is running.
+1. Click the Start icon
+2. Click on your user avatar at the top of the Start Menu
+3. On the left sidebar of the window that opens, click on "Change my environment variables"
+4. Click the "New.." button on the Environment Variables window.
+5. Enter `VS_2010_PATH` as the variable name.
+6. Enter `C:\Program Files (x86)\Microsoft Visual Studio 10.0` for the variable value.
+7. Click "OK" to save your changes.
+
+Once you make this change for your account on one lab computer, you shouldn't have to change it again. However, you may have to make this change on other lab machines you use if your roaming profile does not sync properly.
+
+### Starting Rhapsody and Creating a Project
+
+To get started, launch "IBM Rational Rhapsody for C++ 8.0" from the programs menu. Once Rhapsody finishes launching, you'll be greeted by the "Welcome to Rhapsody" tab.
+
+Create a new project by selecting the "New Project" option in the middle of the welcome screen and enter a project name. Change the "In Folder" to point to a location in your shared drive space. By default, Rhapsody will try to create new projects in the Program Files directory, which you do not have access to and is specific to that lab machine. For now, leave the "Project Type" and "Project Settings" options on "Default" unless your instructor advises you otherwise. Once your press "OK", you'll be greeted with the main project workspace.
 
 ## 3. Defining Classes
 
