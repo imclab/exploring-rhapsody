@@ -6,6 +6,7 @@
 3. Defining Properties and Operations
 4. Defining the Statechart
 5. Stepping Through the Model
+6. Attaching a Test Interface
 
 ## 1. About Rhapsody
 
@@ -67,3 +68,7 @@ Drag a State over from the toolbox on the right and name it "Active", and then e
 To create a cycle between the lit and unlit states, choose the "Transition" tool and drag a line from "ON" to "OFF" and vise versa. When you release dragging on each of the lines, the cursor will appear to allow you to enter in a trigger for the state transition. Enter 'toggle' both times. This will automatically create a special receiver operation on the Bulb to handle the transition. As long as you use the same transition name you used earlier in the `itsBulb->GEN(toggle())` line from the flip operation on the Switch, you can use any name you like and you will not have to do anything additional to get the Bulb to change states properly.
 
 ## 6. Stepping Through the Model
+
+Now that you've finished creating your model and setting up the statechart you can try to build and animate your model. Animating your model will allow you to view each of the state transitions and, with more complex models, help you catch edges cases you may have overlooked.
+
+## 7. Attaching a Test Interface
