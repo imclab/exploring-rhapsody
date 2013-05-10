@@ -1,0 +1,50 @@
+I-Logix-RPY-Archive version 8.7.1 * 5066837
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 6;
+	- value = "DefaultComponent\\DefaultConfig\\Controller.cpp" 5.10.2013::21:0:6
+	"DefaultComponent\\DefaultConfig\\Controller.h" 5.10.2013::20:44:54
+	"DefaultComponent\\DefaultConfig\\Default.cpp" 5.10.2013::21:14:38
+	"DefaultComponent\\DefaultConfig\\Default.h" 5.10.2013::21:8:53
+	"DefaultComponent\\DefaultConfig\\GarageDoor.cpp" 5.10.2013::21:11:31
+	"DefaultComponent\\DefaultConfig\\GarageDoor.h" 5.10.2013::20:7:9
+	
+}
+- size = 4;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID bfe73e26-3ff6-4512-8a81-404ed19b5a50;
+}
+- genTime = 5.10.2013::21:14:38;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 8a1680e1-762e-42fd-8a86-444cf572eb93;
+}
+- genTime = 5.10.2013::21:14:38;
+- hElement = { IHandle 
+	- _m2Class = "*";
+	- _filename = "";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "";
+	- _id = GUID 73bb2a15-11fc-480f-bad8-01064892fa54;
+}
+- genTime = 5.10.2013::21:0:6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "GarageDoor";
+	- _id = GUID 65dd8386-9d62-4a25-ad3f-e502fcb6b24b;
+}
+- genTime = 5.10.2013::21:11:31;
+
