@@ -108,4 +108,46 @@ In order to make something happen, you'll need to trigger an event. Click the `C
 
 ## 7. Attaching a Test Interface
 
-Manually controlling the model through Rhapsody's animation interface is a bit tedious, so you may prefer to attach a command line test interface with which you can control the model and output diagnostics.
+Manually controlling the model through Rhapsody's animation interface is a bit tedious, so you may prefer to attach a command line test interface with which you can control the model and output diagnostics. One way you can do this is by taking advantage of Rhapsody's support for executing C++ code when the statechart changes.
+
+We'll now add a command line menu that can be used to flip the lightswitch without having to use the animation toolbar. Open up the Bulb statechart, and double click on the ON state. In the `Action on entry` state, fill in the following code:
+
+  bool switched = false;
+	std::string command;
+	 
+	while (!switched) {
+	  std::cout << "========================================" << std::endl;
+		display_menu();
+		
+		std::cout << "========================================" << std::endl;
+		std::cin >> command;
+	 
+		if (command.compare("toggle") == 0) {
+			switched = true;
+		} else if (command.compare("status") == 0) {
+	        std::cout << "========================================" << std::endl;
+	        display_status();
+		} else {
+			std::cout << "Unknown command: " << command << std::endl;
+		}
+	}
+	GEN(toggle);
+
+Then, repeat this for the OFF state. You'll notice that this code refers to two new functions, `display_status()` and `display_menu()`. To create these global functions, right click on the LightSwitch package and choose `Add New > Function`. Set the return type of your new functions to void and choose public visibility, and then enter the following code for `display_status()` and `display_menu()` respectively.
+	
+	// display_menu
+	// Display a menu on state transitions that enumerates possible
+	// commands.
+	std::cout << "Actions:\n";
+	std::cout << "* toggle - flip switch\n";
+	std::cout << "* status - show light status/state\n";
+
+	// display_status
+	// Indicate whether the lightbulb is currently illuminated.
+	bool on = Bulb.IS_IN(ON);
+	std::cout << "Lightbulb: (" << (on ? "*" : "O") << ")\n";
+
+To see the test tool at work, rebuild your model with the `Generate/Make/Run` button and then reopen the Bulb statechart and click the `Go Idle` button. Clicking `Go Idle` will put the model into its default state, and you'll be greeted in the open terminal window with the menu you just defined. You can now enter `toggle` into the terminal window to see the Bulb turn on and off in the main Rhapsody window, and `status` to query which state the Bulb is in.
+
+### Figure 8. Animating from the Test Tool
+![Screenshot of the the test tool](http://lorempixel.com/g/600/100/)
