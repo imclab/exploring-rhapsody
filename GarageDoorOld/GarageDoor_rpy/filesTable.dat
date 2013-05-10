@@ -1,0 +1,10 @@
+I-Logix-RPY-Archive version 8.7.1 * 5066837
+
+- filesTable = { IRPYRawContainer 
+	- size = 3;
+	- value = "GarageDoor.rpy" ""
+	"GarageDoor_rpy\\Default.sbs" "Default"
+	"GarageDoor_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	
+}
+

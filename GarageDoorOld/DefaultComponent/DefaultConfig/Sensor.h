@@ -3,20 +3,20 @@
 	Login		: bxt5647
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Switch
-//!	Generated Date	: Wed, 1, May 2013  
-	File Path	: DefaultComponent\DefaultConfig\Switch.h
+	Model Element	: Sensor
+//!	Generated Date	: Fri, 10, May 2013  
+	File Path	: DefaultComponent\DefaultConfig\Sensor.h
 *********************************************************************/
 
-#ifndef Switch_H
-#define Switch_H
+#ifndef Sensor_H
+#define Sensor_H
 
 //## auto_generated
 #include <oxf\oxf.h>
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include <iostream>
+#include <cstdio>
 //## auto_generated
 #include <string>
 //## auto_generated
@@ -29,41 +29,53 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## link itsLight
-class Light_C;
+//## link door
+class GarageDoor_C;
 
 //## package Default
 
-//## class TopLevel::Switch
-class Switch_C : public OMReactive {
+//## class Sensor
+class Sensor : public OMReactive {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedSwitch_C;
+    friend class OMAnimatedSensor;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Switch_C(IOxfActive* theActiveContext = 0);
+    Sensor(IOxfActive* theActiveContext = 0);
     
     //## auto_generated
-    ~Switch_C();
+    ~Sensor();
     
     ////    Operations    ////
     
-    //## operation flip()
-    void flip();
+    //## operation set(int)
+    void set(int value);
     
     ////    Additional operations    ////
     
     //## auto_generated
-    Light_C* getItsLight() const;
+    int getLimit() const;
     
     //## auto_generated
-    void setItsLight(Light_C* p_Light);
+    void setLimit(int p_limit);
+    
+    //## auto_generated
+    int getValue() const;
+    
+    //## auto_generated
+    void setValue(int p_value);
+    
+    //## auto_generated
+    GarageDoor_C* getDoor() const;
+    
+    //## auto_generated
+    void setDoor(GarageDoor_C* p_GarageDoor);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -76,9 +88,15 @@ protected :
     //## auto_generated
     void cleanUpRelations();
     
+    ////    Attributes    ////
+    
+    int limit;		//## attribute limit
+    
+    int value;		//## attribute value
+    
     ////    Relations and components    ////
     
-    Light_C* itsLight;		//## link itsLight
+    GarageDoor_C* door;		//## link door
     
     ////    Framework operations    ////
 
@@ -94,13 +112,28 @@ public :
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
     
+    // under:
+    //## statechart_method
+    inline bool under_IN() const;
+    
+    // over:
+    //## statechart_method
+    inline bool over_IN() const;
+    
+    // init:
+    //## statechart_method
+    inline bool init_IN() const;
+    
     ////    Framework    ////
 
 protected :
 
 //#[ ignore
-    enum Switch_Enum {
-        OMNonState = 0
+    enum Sensor_Enum {
+        OMNonState = 0,
+        under = 1,
+        over = 2,
+        init = 3
     };
     
     int rootState_subState;
@@ -111,26 +144,49 @@ protected :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedSwitch_C : virtual public AOMInstance {
-    DECLARE_REACTIVE_META(Switch_C, OMAnimatedSwitch_C)
+class OMAnimatedSensor : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(Sensor, OMAnimatedSensor)
     
     ////    Framework operations    ////
     
 public :
 
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
     
     //## statechart_method
     void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void under_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void over_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void init_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
 
-inline bool Switch_C::rootState_IN() const {
+inline bool Sensor::rootState_IN() const {
     return true;
+}
+
+inline bool Sensor::under_IN() const {
+    return rootState_subState == under;
+}
+
+inline bool Sensor::over_IN() const {
+    return rootState_subState == over;
+}
+
+inline bool Sensor::init_IN() const {
+    return rootState_subState == init;
 }
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Switch.h
+	File Path	: DefaultComponent\DefaultConfig\Sensor.h
 *********************************************************************/

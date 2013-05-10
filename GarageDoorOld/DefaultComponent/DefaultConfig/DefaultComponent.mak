@@ -69,8 +69,10 @@ INCLUDE_PATH= \
 ADDITIONAL_OBJS=
 
 OBJS= \
-  Light.obj \
-  Switch.obj \
+  GarageDoor.obj \
+  Controller.obj \
+  Motor.obj \
+  Sensor.obj \
   Default.obj
 
 
@@ -154,19 +156,31 @@ SOCK_LIB=
 
 
 
-Light.obj : Light.cpp Light.h    Default.h 
+GarageDoor.obj : GarageDoor.cpp GarageDoor.h    Default.h Motor.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Light.obj" "Light.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"GarageDoor.obj" "GarageDoor.cpp" 
 
 
 
-Switch.obj : Switch.cpp Switch.h    Default.h Light.h 
+Controller.obj : Controller.cpp Controller.h    Default.h GarageDoor.h Sensor.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Switch.obj" "Switch.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Controller.obj" "Controller.cpp" 
 
 
 
-Default.obj : Default.cpp Default.h    Light.h Switch.h 
+Motor.obj : Motor.cpp Motor.h    Default.h GarageDoor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Motor.obj" "Motor.cpp" 
+
+
+
+Sensor.obj : Sensor.cpp Sensor.h    Default.h GarageDoor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Sensor.obj" "Sensor.cpp" 
+
+
+
+Default.obj : Default.cpp Default.h    Sensor.h GarageDoor.h Controller.h Motor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Default.obj" "Default.cpp" 
 
@@ -199,8 +213,10 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 
 clean:
 	@echo Cleanup
-	if exist Light.obj erase Light.obj
-	if exist Switch.obj erase Switch.obj
+	if exist GarageDoor.obj erase GarageDoor.obj
+	if exist Controller.obj erase Controller.obj
+	if exist Motor.obj erase Motor.obj
+	if exist Sensor.obj erase Sensor.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

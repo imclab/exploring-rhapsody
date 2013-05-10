@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Light
-//!	Generated Date	: Mon, 22, Apr 2013  
+//!	Generated Date	: Wed, 1, May 2013  
 	File Path	: DefaultComponent\DefaultConfig\Light.h
 *********************************************************************/
 
@@ -25,6 +25,10 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
+//## auto_generated
+#include <iostream>
+//## auto_generated
+#include <string>
 //## package Default
 
 //## class TopLevel::Light
@@ -56,6 +60,8 @@ protected :
     void initStatechart();
     
     ////    Framework operations    ////
+    
+    ////    Framework    ////
 
 public :
 
@@ -83,8 +89,6 @@ public :
     // OFF:
     //## statechart_method
     inline bool OFF_IN() const;
-    
-    ////    Framework    ////
 
 protected :
 
@@ -113,8 +117,6 @@ class OMAnimatedLight_C : virtual public AOMInstance {
     
 public :
 
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-    
     //## statechart_method
     void rootState_serializeStates(AOMSState* aomsState) const;
     

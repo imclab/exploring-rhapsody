@@ -1,0 +1,203 @@
+I-Logix-RPY-Archive version 8.7.1 * 5066837
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- isLoadOnDemand = 0;
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 150;
+				- m_nTop = 150;
+				- m_nRight = 910;
+				- m_nBottom = 500;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TopLevel.Controller";
+				- _name = "StatechartDiagram";
+				- _id = GUID ce5dee84-6ef9-4f43-81c3-d5407aa8300b;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 914 504 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 175;
+				- m_nTop = 175;
+				- m_nRight = 935;
+				- m_nBottom = 525;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TopLevel.GarageDoor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 6cab7646-55fd-47af-853c-a8b8fa9d40fc;
+			}
+			- _UpLeft = 0 30 ;
+			- _DownRight = 723 321 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 5;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 125;
+				- m_nTop = 125;
+				- m_nRight = 885;
+				- m_nBottom = 475;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TopLevel.GarageDoor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 6cab7646-55fd-47af-853c-a8b8fa9d40fc;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 723 291 ;
+			- _instanceName = "GarageDoor[0]";
+			- m_nDiagramIndex = 2;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 100;
+				- m_nTop = 100;
+				- m_nRight = 860;
+				- m_nBottom = 450;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Sensor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 978f890a-d2a4-44f5-a82a-f51529e23e41;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 723 291 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 3;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 150;
+				- m_nTop = 150;
+				- m_nRight = 910;
+				- m_nBottom = 500;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStructureDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "";
+				- _name = "structure";
+				- _id = GUID 09b0f0db-46e7-4cf4-a4c9-1240d925cd07;
+			}
+			- _UpLeft = 0 110 ;
+			- _DownRight = 573 341 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 25;
+				- m_nTop = 25;
+				- m_nRight = 785;
+				- m_nBottom = 375;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "model";
+				- _id = GUID b97d83ea-28a0-44e2-bb4c-c4cfb64eaf10;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 633 255 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 4;
+		}
+	}
+	- _fullName = "C:\\Users\\bxt5647\\Desktop\\asdf\\GarageDoor\\GarageDoor";
+	- m_SearchScopeList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- bUsingCustomBrowserView = 0;
+	- bUsingQueries = 0;
+	- bApplyOnDiagrams = 0;
+	- liQueryIDs = { IRPYRawContainer 
+		- size = 0;
+	}
+	- liElementTypes = { IRPYRawContainer 
+		- size = 0;
+	}
+
+	- m_favoritesTree = {
+		count=1;
+		{ - favoritesItem
+			generation = 0;
+			name = Favorites;
+			idOrFolder = folder;
+		}
+	}
+
+}
+

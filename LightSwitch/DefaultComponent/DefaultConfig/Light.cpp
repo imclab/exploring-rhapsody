@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Light
-//!	Generated Date	: Mon, 22, Apr 2013  
+//!	Generated Date	: Wed, 1, May 2013  
 	File Path	: DefaultComponent\DefaultConfig\Light.cpp
 *********************************************************************/
 
@@ -65,6 +65,29 @@ IOxfReactive::TakeEventStatus Light_C::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.Active.OFF");
                     Active_subState = OFF;
                     rootState_active = OFF;
+                    //#[ state Active.OFF.(Entry) 
+                    bool switched = false;
+                    std::string command;
+                    
+                    while (!switched) {
+                    	std::cout << "========================================\n";
+                    	display_menu();
+                    	
+                    	std::cout << "========================================\n";
+                    	std::cin >> command;
+                    
+                    	if (command.compare("toggle") == 0) {
+                    		switched = true;
+                    	} else if (command.compare("status") == 0) {
+                            std::cout << "========================================\n";
+                            display_status();
+                    	} else {
+                    		std::cout << "Unknown command: " << command;
+                    	}
+                    }
+                    
+                    GEN(toggle);
+                    //#]
                     NOTIFY_TRANSITION_TERMINATED("2");
                     res = eventConsumed;
                 }
@@ -82,6 +105,29 @@ IOxfReactive::TakeEventStatus Light_C::rootState_processEvent() {
                     NOTIFY_STATE_ENTERED("ROOT.Active.ON");
                     Active_subState = ON;
                     rootState_active = ON;
+                    //#[ state Active.ON.(Entry) 
+                    bool switched = false;
+                    std::string command;
+                    
+                    while (!switched) {
+                    	std::cout << "========================================\n";
+                    	display_menu();
+                    	
+                    	std::cout << "========================================\n";
+                    	std::cin >> command;
+                    
+                    	if (command.compare("toggle") == 0) {
+                    		switched = true;
+                    	} else if (command.compare("status") == 0) {
+                            std::cout << "========================================\n";
+                            display_status();
+                    	} else {
+                    		std::cout << "Unknown command: " << command;
+                    	}
+                    }
+                    
+                    GEN(toggle);
+                    //#]
                     NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
                 }
@@ -102,14 +148,34 @@ void Light_C::Active_entDef() {
     NOTIFY_STATE_ENTERED("ROOT.Active.OFF");
     Active_subState = OFF;
     rootState_active = OFF;
+    //#[ state Active.OFF.(Entry) 
+    bool switched = false;
+    std::string command;
+    
+    while (!switched) {
+    	std::cout << "========================================\n";
+    	display_menu();
+    	
+    	std::cout << "========================================\n";
+    	std::cin >> command;
+    
+    	if (command.compare("toggle") == 0) {
+    		switched = true;
+    	} else if (command.compare("status") == 0) {
+            std::cout << "========================================\n";
+            display_status();
+    	} else {
+    		std::cout << "Unknown command: " << command;
+    	}
+    }
+    
+    GEN(toggle);
+    //#]
     NOTIFY_TRANSITION_TERMINATED("0");
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-void OMAnimatedLight_C::serializeRelations(AOMSRelations* aomsRelations) const {
-}
-
 void OMAnimatedLight_C::rootState_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT");
     if(myReal->rootState_subState == Light_C::Active)

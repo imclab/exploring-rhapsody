@@ -3,20 +3,20 @@
 	Login		: bxt5647
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Switch
-//!	Generated Date	: Wed, 1, May 2013  
-	File Path	: DefaultComponent\DefaultConfig\Switch.h
+	Model Element	: Controller
+//!	Generated Date	: Fri, 10, May 2013  
+	File Path	: DefaultComponent\DefaultConfig\Controller.h
 *********************************************************************/
 
-#ifndef Switch_H
-#define Switch_H
+#ifndef Controller_H
+#define Controller_H
 
 //## auto_generated
 #include <oxf\oxf.h>
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include <iostream>
+#include <cstdio>
 //## auto_generated
 #include <string>
 //## auto_generated
@@ -29,41 +29,45 @@
 #include <oxf\state.h>
 //## auto_generated
 #include <oxf\event.h>
-//## link itsLight
-class Light_C;
+//## link door
+class GarageDoor_C;
+
+//## link loweredSensor
+class Sensor;
 
 //## package Default
 
-//## class TopLevel::Switch
-class Switch_C : public OMReactive {
+//## class TopLevel::Controller
+class Controller_C : public OMReactive {
     ////    Friends    ////
     
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedSwitch_C;
+    friend class OMAnimatedController_C;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    Switch_C(IOxfActive* theActiveContext = 0);
+    Controller_C(IOxfActive* theActiveContext = 0);
     
     //## auto_generated
-    ~Switch_C();
-    
-    ////    Operations    ////
-    
-    //## operation flip()
-    void flip();
+    ~Controller_C();
     
     ////    Additional operations    ////
     
     //## auto_generated
-    Light_C* getItsLight() const;
+    GarageDoor_C* getDoor() const;
     
     //## auto_generated
-    void setItsLight(Light_C* p_Light);
+    void setDoor(GarageDoor_C* p_GarageDoor);
+    
+    //## auto_generated
+    Sensor* getLoweredSensor() const;
+    
+    //## auto_generated
+    void setLoweredSensor(Sensor* p_Sensor);
     
     //## auto_generated
     virtual bool startBehavior();
@@ -78,7 +82,9 @@ protected :
     
     ////    Relations and components    ////
     
-    Light_C* itsLight;		//## link itsLight
+    GarageDoor_C* door;		//## link door
+    
+    Sensor* loweredSensor;		//## link loweredSensor
     
     ////    Framework operations    ////
 
@@ -94,13 +100,23 @@ public :
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent();
     
+    // main:
+    //## statechart_method
+    inline bool main_IN() const;
+    
+    // action:
+    //## statechart_method
+    inline bool action_IN() const;
+    
     ////    Framework    ////
 
 protected :
 
 //#[ ignore
-    enum Switch_Enum {
-        OMNonState = 0
+    enum Controller_Enum {
+        OMNonState = 0,
+        main = 1,
+        action = 2
     };
     
     int rootState_subState;
@@ -111,8 +127,8 @@ protected :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedSwitch_C : virtual public AOMInstance {
-    DECLARE_REACTIVE_META(Switch_C, OMAnimatedSwitch_C)
+class OMAnimatedController_C : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(Controller_C, OMAnimatedController_C)
     
     ////    Framework operations    ////
     
@@ -122,15 +138,29 @@ public :
     
     //## statechart_method
     void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void main_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void action_serializeStates(AOMSState* aomsState) const;
 };
 //#]
 #endif // _OMINSTRUMENT
 
-inline bool Switch_C::rootState_IN() const {
+inline bool Controller_C::rootState_IN() const {
     return true;
+}
+
+inline bool Controller_C::main_IN() const {
+    return rootState_subState == main;
+}
+
+inline bool Controller_C::action_IN() const {
+    return rootState_subState == action;
 }
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Switch.h
+	File Path	: DefaultComponent\DefaultConfig\Controller.h
 *********************************************************************/

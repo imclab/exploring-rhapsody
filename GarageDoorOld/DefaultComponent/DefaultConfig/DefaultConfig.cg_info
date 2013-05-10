@@ -1,0 +1,72 @@
+I-Logix-RPY-Archive version 8.7.1 * 5066837
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 10;
+	- value = "DefaultComponent\\DefaultConfig\\Controller.cpp" 5.10.2013::19:21:7
+	"DefaultComponent\\DefaultConfig\\Controller.h" 5.10.2013::19:7:27
+	"DefaultComponent\\DefaultConfig\\Default.cpp" 5.10.2013::18:59:43
+	"DefaultComponent\\DefaultConfig\\Default.h" 5.10.2013::18:59:42
+	"DefaultComponent\\DefaultConfig\\GarageDoor.cpp" 5.10.2013::19:22:9
+	"DefaultComponent\\DefaultConfig\\GarageDoor.h" 5.10.2013::18:43:16
+	"DefaultComponent\\DefaultConfig\\Motor.cpp" 5.10.2013::19:21:7
+	"DefaultComponent\\DefaultConfig\\Motor.h" 5.10.2013::18:43:16
+	"DefaultComponent\\DefaultConfig\\Sensor.cpp" 5.10.2013::19:21:7
+	"DefaultComponent\\DefaultConfig\\Sensor.h" 5.10.2013::18:43:16
+	
+}
+- size = 6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "Controller";
+	- _id = GUID cc47b8a1-5df3-43a0-816d-5b889a79409f;
+}
+- genTime = 5.10.2013::19:21:7;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "GarageDoor";
+	- _id = GUID 1902b93c-721c-4a22-8103-e144481f9631;
+}
+- genTime = 5.10.2013::19:22:9;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 2dbe3dd6-5a94-495c-aac7-fb90473abb04;
+}
+- genTime = 5.10.2013::19:21:7;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Sensor";
+	- _id = GUID 0ab1c7f1-e4cc-4d9b-95d2-595ce5e6cbf9;
+}
+- genTime = 5.10.2013::19:21:7;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "TopLevel";
+	- _name = "Motor";
+	- _id = GUID 50410d68-6ef5-425b-a7fd-1b49eca509e2;
+}
+- genTime = 5.10.2013::19:21:7;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID 98231d0c-287b-4bf6-8e40-f15a0e9b0bb0;
+}
+- genTime = 5.10.2013::19:22:9;
+

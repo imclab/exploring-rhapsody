@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Mon, 22, Apr 2013  
+//!	Generated Date	: Wed, 1, May 2013  
 	File Path	: DefaultComponent\DefaultConfig\Default.h
 *********************************************************************/
 
@@ -15,6 +15,10 @@
 #include <oxf\oxf.h>
 //## auto_generated
 #include <aom\aom.h>
+//## auto_generated
+#include <iostream>
+//## auto_generated
+#include <string>
 //## auto_generated
 #include <oxf\event.h>
 //## classInstance Light
@@ -35,6 +39,12 @@ extern Light_C Light;
 
 //## classInstance Switch
 extern Switch_C Switch;
+
+//## operation display_menu()
+void display_menu();
+
+//## operation display_status()
+void display_status();
 
 //## auto_generated
 void Default_initRelations();

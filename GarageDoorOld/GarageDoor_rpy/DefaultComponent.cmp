@@ -1,9 +1,8 @@
 I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 { IComponent 
-	- _id = GUID cb837cf4-3084-406e-b55f-52422035c34d;
+	- _id = GUID 92973c8b-0557-4d3c-b576-f03a341ad2b1;
 	- _myState = 139264;
 	- _name = "DefaultComponent";
-	- _lastID = 1;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -11,22 +10,12 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 	- m_includePath = "";
 	- m_initializationCode = "";
 	- m_folder = { IFolder 
-		- _id = GUID 54b77d0f-28dd-456a-a685-34c5dd9a7428;
+		- _id = GUID aa4af2b9-4763-498f-ba5d-97c8a9691cfa;
 		- _myState = 73728;
 		- _name = "Files";
-		- _lastID = 2;
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
-			- size = 1;
-			- value = 
-			{ IHandle 
-				- _m2Class = "ISubsystem";
-				- _filename = "Default.sbs";
-				- _subsystem = "";
-				- _class = "";
-				- _name = "Default";
-				- _id = GUID 0a9b06d1-4e0d-4b7a-8283-f258a8ebe4ab;
-			}
+			- size = 0;
 		}
 		- Files = { IRPYRawContainer 
 			- size = 0;
@@ -34,43 +23,43 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 1dcf6e9a-b408-48a5-9ed8-6ef3784ce59b;
+		- _id = GUID 98231d0c-287b-4bf6-8e40-f15a0e9b0bb0;
 	}
 	- Configs = { IRPYRawContainer 
 		- size = 1;
 		- value = 
 		{ ICodeGenConfigInfo 
-			- _id = GUID 1dcf6e9a-b408-48a5-9ed8-6ef3784ce59b;
+			- _id = GUID 98231d0c-287b-4bf6-8e40-f15a0e9b0bb0;
 			- _myState = 8192;
 			- _name = "DefaultConfig";
 			- HyperLinks = { IRPYRawContainer 
 				- size = 2;
 				- value = 
 				{ IMHyperLink 
-					- _id = GUID 72032e1b-268d-46ef-9ac1-ef3be683d7da;
+					- _id = GUID 4d5701cf-2b03-4e18-ab74-4274d297d1e1;
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "";
 					}
 					- _linkDispName = "Edit Makefile";
 					- _linkType = "FREE";
-					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\rhapsody\\LightSwitch\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
+					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\asdf\\GarageDoor\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
 					- isConfigurationFileHyperLink = 1;
 				}
 				{ IMHyperLink 
-					- _id = GUID 798cd61f-c1a4-4709-94c0-51c720d6d77a;
+					- _id = GUID e956b205-f326-4ebb-8835-6c6c6c990245;
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "";
 					}
 					- _linkDispName = "Edit Main File";
 					- _linkType = "FREE";
-					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\rhapsody\\LightSwitch\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
+					- _linkTarget = "C:\\Users\\bxt5647\\Desktop\\asdf\\GarageDoor\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
 					- isConfigurationFileHyperLink = 1;
 				}
 			}
 			- _scopeType = Explicit;
 			- _libraries = "";
 			- _additionalSources = "";
-			- _standardHeaders = "<iostream>,<string>";
+			- _standardHeaders = "<cstdio>,<string>";
 			- _includePath = "";
 			- _targetMain = "";
 			- _instrumentation = Animation;
@@ -83,27 +72,10 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 				- size = 0;
 			}
 			- InitialInstances = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "TopLevel";
-					- _name = "Light";
-					- _id = GUID a0496e20-bca4-4184-8731-53e838bea0d5;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "TopLevel";
-					- _name = "Switch";
-					- _id = GUID 4aee6b56-3ec1-447f-8430-a8db994b327c;
-				}
+				- size = 0;
 			}
 			- _root = { IFolder 
-				- _id = GUID 48393a3d-c67d-440b-a928-add8a9f2aeba;
+				- _id = GUID f1e524f9-5337-46d4-a38f-b3260ea0640b;
 				- _myState = 8192;
 				- _name = "DefaultConfig";
 				- m_path = "";
@@ -114,8 +86,8 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 					- size = 0;
 				}
 			}
-			- weakCGTime = 5.1.2013::19:29:42;
-			- strongCGTime = 5.1.2013::19:29:42;
+			- weakCGTime = 5.10.2013::18:43:14;
+			- strongCGTime = 5.10.2013::18:43:14;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -132,7 +104,7 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 			- _subsystem = "";
 			- _class = "";
 			- _name = "Default";
-			- _id = GUID 0a9b06d1-4e0d-4b7a-8283-f258a8ebe4ab;
+			- _id = GUID 2dbe3dd6-5a94-495c-aac7-fb90473abb04;
 		}
 	}
 	- VariationPoints = { IRPYRawContainer 
@@ -141,7 +113,7 @@ I-Logix-RPY-Archive version 8.7.1 C++ 5066837
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 5.1.2013::19:19:51;
-	- strongCGTime = 5.1.2013::18:49:44;
+	- weakCGTime = 5.10.2013::18:43:14;
+	- strongCGTime = 1.2.1990::0:0:0;
 }
 

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Default
-//!	Generated Date	: Mon, 22, Apr 2013  
+//!	Generated Date	: Wed, 1, May 2013  
 	File Path	: DefaultComponent\DefaultConfig\Default.cpp
 *********************************************************************/
 
@@ -19,6 +19,10 @@
 //## classInstance Switch
 #include "Switch.h"
 //#[ ignore
+#define Default_display_menu_SERIALIZE OM_NO_OP
+
+#define Default_display_status_SERIALIZE OM_NO_OP
+
 #define toggle_SERIALIZE OM_NO_OP
 
 #define toggle_UNSERIALIZE OM_NO_OP
@@ -42,6 +46,26 @@ static void RenameGlobalInstances();
 
 IMPLEMENT_META_PACKAGE(Default, Default)
 #endif // _OMINSTRUMENT
+
+//## operation display_menu()
+void display_menu() {
+    NOTIFY_FUNCTION(Default, display_menu, display_menu(), 0, Default_display_menu_SERIALIZE);
+    //#[ operation display_menu()
+    std::cout << "Actions:\n";
+    std::cout << "* toggle - flip switch\n";
+    std::cout << "* status - show light status/state\n";
+    //#]
+}
+
+//## operation display_status()
+void display_status() {
+    NOTIFY_FUNCTION(Default, display_status, display_status(), 0, Default_display_status_SERIALIZE);
+    //#[ operation display_status()
+    bool on = Light.IS_IN(ON);
+    
+    std::cout << "Lightbulb: (" << (on ? "*" : "O") << ")\n";
+    //#]
+}
 
 void Default_initRelations() {
     {

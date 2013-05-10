@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DefaultConfig
-//!	Generated Date	: Wed, 1, May 2013  
+//!	Generated Date	: Fri, 10, May 2013  
 	File Path	: DefaultComponent\DefaultConfig\MainDefaultComponent.h
 *********************************************************************/
 
@@ -16,7 +16,7 @@
 //## auto_generated
 #include <aom\aom.h>
 //## auto_generated
-#include <iostream>
+#include <cstdio>
 //## auto_generated
 #include <string>
 class DefaultComponent {
