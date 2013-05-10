@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 5;
+		- size = 6;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -30,16 +30,16 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _name = "StatechartDiagram";
 				- _id = GUID f87bcc2d-d0f6-4654-acc0-e593e1378581;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 673 399 ;
+			- _UpLeft = 0 10 ;
+			- _DownRight = 1057 637 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 4;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -59,9 +59,9 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _id = GUID f87bcc2d-d0f6-4654-acc0-e593e1378581;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 914 504 ;
+			- _DownRight = 3969 1196 ;
 			- _instanceName = "Light";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -69,7 +69,7 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- m_nFlags = 2;
 				- m_showCmd = 2;
 				- m_ptMinPositionX = 0;
-				- m_ptMinPositionY = 675;
+				- m_ptMinPositionY = 424;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -30;
 				- m_nLeft = 75;
@@ -89,7 +89,35 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 			- _UpLeft = 0 149 ;
 			- _DownRight = 1149 512 ;
 			- _instanceName = "Light[0]";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 2;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -30;
+				- m_nLeft = 150;
+				- m_nTop = 150;
+				- m_nRight = 282;
+				- m_nBottom = 617;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "TopLevel.Switch";
+				- _name = "StatechartDiagram";
+				- _id = GUID 558e1ff4-4177-4c69-9884-11b1a654a7f3;
+			}
+			- _UpLeft = 112 0 ;
+			- _DownRight = 207 408 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -117,7 +145,7 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 			- _UpLeft = 0 20 ;
 			- _DownRight = 673 419 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
+			- m_nDiagramIndex = 5;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -145,10 +173,10 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 			- _UpLeft = 0 0 ;
 			- _DownRight = 723 291 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 3;
 		}
 	}
-	- _fullName = "C:\\Users\\bxt5647\\Desktop\\rhapsody\\LightSwitch\\LightSwitch";
+	- _fullName = "Z:\\exploring-rhapsody\\LightSwitch\\LightSwitch";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
