@@ -112,7 +112,7 @@ Manually controlling the model through Rhapsody's animation interface is a bit t
 
 We'll now add a command line menu that can be used to flip the lightswitch without having to use the animation toolbar. Open up the Bulb statechart, and double click on the ON state. In the `Action on entry` state, fill in the following code:
 
-  bool switched = false;
+	bool switched = false;
 	std::string command;
 	 
 	while (!switched) {
