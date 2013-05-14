@@ -58,7 +58,7 @@ You'll notice after you create "Bulb" and "Switch" that a "Classes" folder has a
 Click on the Directed Association tool on the right hand toolbar, and draw a line from Switch to Bulb. This will cause Switch to own an instance of Bulb, and by default this property on the Switch class will be called `itsBulb`.
 
 ### Figure 3. The Class Diagram
-![Screenshot of the class diagram](http://lorempixel.com/g/600/100/https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/3-class_diagram.png)
+![Screenshot of the class diagram](https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/3-class_diagram.png)
 
 ## 4. Defining Operations
 
