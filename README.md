@@ -151,3 +151,12 @@ To see the test tool at work, rebuild your model with the `Generate/Make/Run` bu
 
 ### Figure 10. Animating from the Test Tool
 ![Screenshot of the the test tool](https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/10-test_tool.png)
+
+## 8. Moving On
+
+From here it's possible to do a wide number of things with Rhapsody that are out of the scope of this documentation. Rhapsody is a very powerful tool,
+and in the right hands it can be used to simplify model validation and the deployment of correct code through such features as its autocoding functions.
+To see a more complex example of what can be done with Rhapsody, look at the provided GarageDoor project, a Rhapsody model of an SE462 class project.
+
+If you need additional assitance, IBM's Getting Started guide is available here: [Getting Started Guide [PDF]](http://publib.boulder.ibm.com/infocenter/rsdp/v1r0m0/topic/com.ibm.help.download.rhapsody.doc/pdf75/Getting_Started_Guide.pdf)
+Rhapsody also comes installed with thorough documentation.
