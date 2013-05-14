@@ -75,7 +75,7 @@ to build projects.</p>
 <li>Click "OK" to save your changes.</li>
 </ol><h3>Figure 1. Setting environment variables</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/1-environment_variables.png" alt="Screenshot of setting environment variables"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/1-environment_variables.png" alt="Screenshot of setting environment variables"></p>
 
 <p>Once you make this change for your account on one lab computer, you shouldn't have to change it again. However, you may have to make this change on other lab machines you use if your roaming profile does not sync properly.</p>
 
@@ -87,7 +87,7 @@ to build projects.</p>
 
 <h3>Figure 2. The Rhapsody project workspace</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/2-rhapsody_workspace.png" alt="Screenshot of the project workspace"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/2-rhapsody_workspace.png" alt="Screenshot of the project workspace"></p>
 
 <h2>3. Defining Classes</h2>
 
@@ -101,7 +101,7 @@ to build projects.</p>
 
 <h3>Figure 3. The Class Diagram</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/3-class_diagram.png" alt="Screenshot of the class diagram"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/3-class_diagram.png" alt="Screenshot of the class diagram"></p>
 
 <h2>4. Defining Operations</h2>
 
@@ -111,7 +111,7 @@ to build projects.</p>
 
 <h3>Figure 4. Defining the flip() operation</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/4-defining_flip.png" alt="Screenshot of defining flip() in the operation properties window"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/4-defining_flip.png" alt="Screenshot of defining flip() in the operation properties window"></p>
 
 <p>Ensure that flip() is defined as a <code>public</code>, <code>void</code> function, and then click on the Implementation tab. To cause the light to turn on and off when the switch is flipped, enter the line <code>itsBulb-&gt;GEN(toggle());</code>. This statement is a directive to Rhapsody's model engine that will tell it to trigger a 'toggle' transition in the Bulb's statechart when <code>flip()</code> is called. However, we haven't yet created the statechart that defines the Bulb's behavior.</p>
 
@@ -125,7 +125,7 @@ to build projects.</p>
 
 <h3>Figure 5. The Completed Statechart</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/5-statechart.png" alt="Screenshot of the completed statechart."></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/5-statechart.png" alt="Screenshot of the completed statechart."></p>
 
 <h2>6. Stepping Through the Model</h2>
 
@@ -133,19 +133,19 @@ to build projects.</p>
 
 <h3>Figure 6. Creating Instances of Your Classes</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/6-object_model_diagram.png" alt="Screenshot of completed object model diagram"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/6-object_model_diagram.png" alt="Screenshot of completed object model diagram"></p>
 
 <p>We next need to create an instance of each of the Switch and Bulb classes. To start, right click on the LightSwitch package in the model viewer, and select <code>Add New &gt; Diagrams &gt; Object Model Diagram</code>. Name your diagram something like "LightSwitch Object Model" and then make sure that the 'populate diagram' checkbox is unchecked before clicking OK. Then, click and drag a copy of the Bulb and Switch classes from the model viewer into the main workspace for the object model diagram. Once you've placed the classes in the diagram, right click on each of the class boxes and click <code>Make an Object</code>. This will cause the Bulb and Switch class boxes in the object model diagram to be replaced with an object for itsBulb and itsSwitch respectively.</p>
 
 <h3>Figure 7. The Build Toolbar</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/7-build_toolbar.png" alt="Screenshot of the build toolbar"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/7-build_toolbar.png" alt="Screenshot of the build toolbar"></p>
 
 <p>Now you can finally build your model. Click the <code>Generate/Make/Run</code> button on the build toolbar to start Rhapsody building the C++ source that it generated for your model. It will take Rhapsody a moment or two to finish building, but if everything went well you'll soon see "Build Done" in the build window at the bottom of the screen and a blank terminal window will open up which indicates that the model is running.</p>
 
 <h3>Figure 8. The Build Window</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/8-build_window.png" alt="Screenshot of the build window"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/8-build_window.png" alt="Screenshot of the build window"></p>
 
 <p>Now you can start to play with the statechart for the Bulb that you created. From the Tools menu select the <code>Animated Statechart</code> option and select <code>Bulb[0]</code> as the instance that you would like to model before clicking OK. This will open up a window containing an animated view of the Bulb statechart you created, though it won't be doing anything exciting to start with.</p>
 
@@ -153,7 +153,7 @@ to build projects.</p>
 
 <h3>Figure 9. The Animated Model</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/9-animated_chart.png" alt="Screenshot of the the animated model"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/9-animated_chart.png" alt="Screenshot of the the animated model"></p>
 
 <h2>7. Attaching a Test Interface</h2>
 
@@ -202,7 +202,7 @@ std::cout &lt;&lt; "Lightbulb: (" &lt;&lt; (on ? "*" : "O") &lt;&lt; ")\n";
 
 <h3>Figure 10. Animating from the Test Tool</h3>
 
-<p><img src="https://github.com/mansam/exploring-rhapsody/blob/gh-pages/images/10-test_tool.png" alt="Screenshot of the the test tool"></p>
+<p><img src="https://raw.github.com/mansam/exploring-rhapsody/gh-pages/images/10-test_tool.png" alt="Screenshot of the the test tool"></p>
       </section>
 
     </div>
